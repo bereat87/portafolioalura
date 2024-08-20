@@ -159,6 +159,7 @@ medidas responsivas */
 
     .header_menu{
         justify-content: center;
+        width: auto;
     }
 
     .presentacion {
