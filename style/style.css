@@ -154,12 +154,12 @@ medidas responsivas */
 {
 
     .header{
-        padding: 10%;
+        padding: 10% 0% 0% 15%;
     }
 
     .header_menu{
         justify-content: center;
-        width: 5%;
+        width: auto;
     }
 
     .presentacion {
