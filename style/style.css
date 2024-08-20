@@ -1,0 +1,177 @@
+
+:root{
+    --color-primario: #F1D3CE;
+    --color-secundario: #48aadf;
+    --color-terciario: #FF8C9E;
+    --color-hover: #FF4E88;
+
+    --fuente-monserrat: "Monserrat", "sans-serif";
+    --fuente-krona: "Krona One", "sans-serif";
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background-color: var(--color-primario);
+    /*El uso de var nos ayuda a no repetir colores en el codigo y 
+    a poder cambiar al paleta de colores más facil en nuestro diseño */
+    color: var(--color-secundario);
+    box-sizing: border-box;
+    /* si estableces el Width del body en 100%, con box-sizing: border-box;,
+     el padding y el borde se restan del ancho total, evitando que el body 
+     se expanda más allá del ancho disponible.*/
+    /*box-sizing: border-box = width + padding + border.*/
+}
+
+.header{
+    padding: 2% 0% 0% 15%;
+}
+
+.header_menu{
+    display: flex; /*Usamos display flex para hacer el elemento flexible*/
+    gap: 80px;
+    /*usamos gap para poner la distancia entre elementos*/
+}
+
+.header_menu_link{
+    font-family: var(--fuente-monserrat);
+    /*El uso de var nos ayuda a no repetir fuentes en el codigo y 
+    a poder cambiar la tipografia más facil en nuestro diseño */
+    font-size: 1.5rem;
+    /*Las medidas rem nos ayudan a crear un diseño responsivo
+    y adatable para zoom 1rem = 16px*/
+    font-weight: 600;
+    color:var(--color-terciario);
+    text-decoration: none;
+}
+
+.presentacion{
+    display: flex;
+    align-items: center;
+    padding: 6% 15%;
+    /*Es el espacio interno que tiene entre un elemento*/
+    justify-content: space-between;
+    gap: 82px ;
+}
+
+.presentacion_contenido{
+    width: 50%;
+    display: flex;
+    /*Importante usar display flez para usar
+    propiedades de flex box*/
+    flex-direction: column;
+    /*es la direccion que queremos que lleve nuestro elemento*/
+    gap: 40px;
+}
+
+.titulo-destaque {
+    color: var(--color-terciario);
+}
+
+.presentacion_contenido_titulo{
+    font-size: 2.2rem;
+    font-family: var(--fuente-krona);
+}
+
+.presentacion_contenido_texto{
+    font-family: var(--fuente-monserrat);
+    font-size: 1.5rem;
+}
+
+.presentacion_enlace{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentacion_enlaces_subtitulo{
+    font-size: var(--fuente-krona) ;
+    font-size: 1.5rem;
+    font-weight: 400;
+    /*peso de la fuente*/
+}
+
+.presentacion_enlace_link {
+    width: 50%;
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 8px;
+    font-family: var(--fuente-monserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    /* text-decoration:none nos ayuda a quitar
+    el subrrayado de un link */
+    color: var(--color-secundario);
+    border: 2px solid var(--color-terciario);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.presentacion_enlace_link:hover{
+    background-color: var(--color-hover);
+    /*:hover nos sirve para cambiar el color
+    del elemento cuando pasamos el cursor*/
+}
+
+.presentacion_imagen{
+    width: 50%;
+    /*ancho del elemento*/
+}
+
+.footer{
+    background-color: var(--color-terciario);
+    padding: 1.5rem;
+    color:var(--color-primario);
+    text-align: center;
+    font-family: var(--fuente-monserrat);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.presentacion_contenido_texto a{
+    text-decoration: none;
+    color: var(--color-terciario);
+}
+
+/*medidas query para hacer responsivo el proyecto
+es decir: adaptable para todo tipo de 
+dispositivos*/
+
+@media (max-width:1200px)
+
+/* @media nos siver para decir cual será el máximo
+o minimo de ancho en el que se aplicaran nuestras
+medidas responsivas */
+
+{
+
+    .header{
+        padding: 10%;
+    }
+
+    .header_menu{
+        justify-content: center;
+    }
+
+    .presentacion {
+        flex-direction: column-reverse;
+        /*Para que le imagen aparezca en la parte
+        de arriba en dispositivos moviles*/
+        padding: 5%;
+    }
+
+    .presentacion_contenido {
+        width: auto;
+        /* sirve para adaptar el ancho de una
+        manera automatica */
+    }
+
+}
