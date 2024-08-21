@@ -154,10 +154,11 @@ medidas responsivas */
 {
 
     .header{
-        padding: 10% 0% 2% 2%;
+        padding: 10%;
     }
 
     .header_menu{
+        padding: 0% 0% 2% 2%;
         display: flex;
         justify-content: center;
         align-items: center;
