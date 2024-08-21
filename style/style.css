@@ -32,7 +32,7 @@ body{
 
 .header_menu{
     display: flex; /*Usamos display flex para hacer el elemento flexible*/
-    gap: 5rem;
+    gap: 3.5rem;
     /*usamos gap para poner la distancia entre elementos*/
 }
 
