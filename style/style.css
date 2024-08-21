@@ -158,6 +158,7 @@ medidas responsivas */
     }
 
     .header_menu{
+        width: 50%;
         padding: 0% 0% 2% 2%;
         display: flex;
         justify-content: center;
