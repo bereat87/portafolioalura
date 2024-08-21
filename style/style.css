@@ -32,7 +32,7 @@ body{
 
 .header_menu{
     display: flex; /*Usamos display flex para hacer el elemento flexible*/
-    gap: 3.5rem;
+    gap: 80px
     /*usamos gap para poner la distancia entre elementos*/
 }
 
@@ -159,7 +159,8 @@ medidas responsivas */
 
     .header_menu{
         display: flex;
-        justify-content: center
+        justify-content: center;
+        gap: 80px;
     }
 
     .presentacion {
